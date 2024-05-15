@@ -1764,3 +1764,636 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 3rem;
   }
 }
+
+.pembayaran .warehouse-cart-package-ribbon-streamline-ultimate-svg {
+  width: 50px;
+  height: 50px;
+}
+.pembayaran .gosayur {
+  margin: 9px 0 11px 0;
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+}
+.gosayur {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.333;
+  color: #3DAE55;
+}
+.pembayaran .logo {
+  margin: 18px 0 25px 0;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.pembayaran .shipping-truck-style-2-streamline-ultimate-svg {
+  width: 30px;
+  height: 30px;
+}
+.pembayaran .kirim-icon {
+  position: relative;
+  margin: 0 0 6px 0.7px;
+  display: flex;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+}
+.pembayaran .pengiriman-1 {
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+.pembayaran .pengiriman {
+  margin-right: 0.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.pembayaran .line-152 {
+  background: #000000;
+  margin: 34px 0 58px 0;
+  width: 80px;
+  height: 1px;
+}
+.pembayaran .rp {
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+.pembayaran .bayar-icon {
+  border-radius: 30px;
+  background: #3DAE55;
+  position: relative;
+  margin: 0 0 6px 1.8px;
+  display: flex;
+  padding: 17px 17.4px 16px 19px;
+  box-sizing: border-box;
+}
+.pembayaran .pembayaran-1 {
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+.pembayaran .pembayaran {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.pembayaran .container-10 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.pembayaran .lock-1-streamline-ultimate-png-1 {
+  background: url('../assets/images/lock_1_streamline_ultimate_png.png') 50% / cover no-repeat;
+  width: 24px;
+  height: 24px;
+}
+.pembayaran .lock-1-streamline-ultimate-png {
+  margin: 3px 14px 3px 0;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+}
+.pembayaran .transaksi-aman-1 {
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+}
+.pembayaran .transaksi-aman {
+  margin: 28px 0 35px 0;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.pembayaran .navbar-2 {
+  border: 0.5px solid #000000;
+  background: #FFFFFF;
+  position: relative;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 18px 50.5px 10px 50px;
+  width: 1440px;
+  box-sizing: border-box;
+}
+.pembayaran .buat-pesanan {
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.pembayaran .checkout {
+  background: #3DAE55;
+  position: relative;
+  margin: 458px 423px 516px 0;
+  display: flex;
+  padding: 9px 1.1px 10px 0;
+  width: 248px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.pembayaran .ringkasan-belanja-1 {
+  margin: 0 1px 17px 1px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+}
+.pembayaran .line-12 {
+  background: #CBC9C9;
+  margin: 0 0 12px 1px;
+  width: 345px;
+  height: 1px;
+}
+.pembayaran .container {
+  background: url('../assets/images/image_1.jpeg') 50% / cover no-repeat;
+  margin: 0 43px 12px 0;
+  width: 63px;
+  height: 50px;
+}
+.pembayaran .pisang-cavendish {
+  margin: 0 14.3px 4px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+.pembayaran .pisang-cavendish-500-gr {
+  margin-bottom: 5px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+.harga-rp-25000 {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.333;
+  color: #000000;
+}
+.pembayaran .harga-rp-25000 {
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  color: #888888;
+}
+.pembayaran .container-1 {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.pembayaran .container-9 {
+  margin: 0 1px 5px 1px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.pembayaran .jumlah-2 {
+  margin: 0 70.8px 33px 0;
+  display: inline-block;
+  align-self: center;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  color: #888888;
+}
+.pembayaran .subtotal-belanja {
+  margin-right: 9.5px;
+  width: 263.5px;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.pembayaran .rp-50000 {
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.pembayaran .container-11 {
+  margin: 0 0px 17px 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 345px;
+  box-sizing: border-box;
+}
+.pembayaran .line-13 {
+  background: #CBC9C9;
+  margin: 0 0 7px 1px;
+  width: 345px;
+  height: 1px;
+}
+.pembayaran .pengiriman-2 {
+  margin-right: 9.5px;
+  width: 303.5px;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.pembayaran .rp-0 {
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.pembayaran .container-3 {
+  margin: 0 0.2px 0 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 344.8px;
+  box-sizing: border-box;
+}
+.pembayaran .regular-jtregular-1 {
+  margin: 0 1px 12px 1px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  color: #888888;
+}
+.pembayaran .line-14 {
+  background: #CBC9C9;
+  margin: 0 1px 3px 0;
+  width: 345px;
+  height: 1px;
+}
+.pembayaran .total {
+  margin-right: 10.5px;
+  width: 227.5px;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+.pembayaran .rp-5000000 {
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+.pembayaran .container-5 {
+  margin: 0 0.4px 0 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 344.6px;
+  box-sizing: border-box;
+}
+.pembayaran .desc {
+  margin: 0 1px 50px 0;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.pembayaran .kirim-ke {
+  margin-bottom: 15px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+.pembayaran .line-15 {
+  background: #CBC9C9;
+  margin: 0 0 14px 1px;
+  width: 345px;
+  height: 1px;
+}
+.pembayaran .amara-nibiru-jl-cendrawasih-no-23-rt-01-rw-05-kota-tasikmalaya-tawang-jawa-barat-46199-indonesia-087725164178 {
+  margin: 0 1px;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.563;
+  color: #000000;
+}
+.pembayaran .kirim-ke-1 {
+  margin: 0 1px 20px 0;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.pembayaran .metode-pengiriman {
+  margin: 0 1px 15px 1px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+.pembayaran .line-151 {
+  background: #CBC9C9;
+  margin: 0 0 14px 2px;
+  width: 345px;
+  height: 1px;
+}
+.pembayaran .regular-jtregular {
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.pembayaran .metode-pengiriman-1 {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.pembayaran .container-2 {
+  border: 0.5px solid #000000;
+  position: relative;
+  margin-bottom: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px 24px 32px 24px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.pembayaran .vector-12 {
+  width: 38px;
+  height: 32.5px;
+}
+.pembayaran .chat {
+  border-radius: 40px;
+  background: #3DAE55;
+  position: relative;
+  margin: 0 34px 225px 34px;
+  display: flex;
+  padding: 24px 0 23.5px 0px;
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+}
+.pembayaran .lanjutkan {
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.pembayaran .checkout-1 {
+  background: #3DAE55;
+  position: relative;
+  display: flex;
+  align-self: flex-start;
+  padding: 9px 4.6px 10px 0;
+  width: 248px;
+  box-sizing: border-box;
+}
+.pembayaran .ringkasan-belanja {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 669px;
+  box-sizing: border-box;
+}
+.pembayaran .container-4 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 1340px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.pembayaran .metode-pembayaran {
+  margin: 0 0px 20px 0px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+}
+.pembayaran .line-16 {
+  background: #000000;
+  margin-bottom: 30.5px;
+  width: 839px;
+  height: 0.5px;
+}
+.pembayaran .pilih-metode-pembayaran-anda {
+  margin: 0 0px 20px 0px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.pembayaran .ellipse-8 {
+  border-radius: 10px;
+  background: #345FF6;
+  width: 20px;
+  height: 20px;
+}
+.pembayaran .container-7 {
+  position: relative;
+  margin-right: 19px;
+  display: flex;
+  padding: 3px;
+  width: 26px;
+  height: 26px;
+  box-sizing: border-box;
+}
+.pembayaran .virtual-account {
+  margin: 3px 0 4px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.pembayaran .container {
+  margin-bottom: 17px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.pembayaran .ellipse-81 {
+  border-radius: 10px;
+  background: #345FF6;
+  width: 20px;
+  height: 20px;
+}
+.pembayaran .container-8 {
+  position: relative;
+  margin: 3px 6px 2px 0;
+  display: flex;
+  padding: 3px;
+  width: 26px;
+  height: 26px;
+  box-sizing: border-box;
+}
+.pembayaran .image-2 {
+  background: url('../assets/images/image_2.png');
+  width: 43px;
+  height: 31px;
+}
+.pembayaran .bca {
+  margin: 0 15.7px 18px 0;
+  display: flex;
+  flex-direction: row;
+  width: 75px;
+  box-sizing: border-box;
+}
+.pembayaran .ellipse-72 {
+  border-radius: 13px;
+  margin: 0 6px 2.1px 0;
+  width: 26px;
+  height: 26px;
+}
+.pembayaran .image-3 {
+  background: url('../assets/images/image_3.png') 50% / cover no-repeat;
+  width: 50px;
+  height: 28.1px;
+}
+.pembayaran .bri {
+  margin: 0 8.7px 17.9px 0;
+  display: flex;
+  flex-direction: row;
+  width: 82px;
+  box-sizing: border-box;
+}
+.pembayaran .ellipse-73 {
+  border-radius: 13px;
+  margin-right: 6px;
+  width: 26px;
+  height: 26px;
+}
+.pembayaran .image-4 {
+  background: url('../assets/images/image_4.png') 50% / cover no-repeat;
+  margin-bottom: 3.9px;
+  width: 65px;
+  height: 22.1px;
+}
+.pembayaran .mandiri {
+  margin-left: 6.3px;
+  display: flex;
+  flex-direction: row;
+  width: 97px;
+  box-sizing: border-box;
+}
+.pembayaran .va {
+  margin: 0 0px 35px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.pembayaran .ellipse-74 {
+  border-radius: 13px;
+  margin-right: 19px;
+  width: 26px;
+  height: 26px;
+}
+.pembayaran .image-5 {
+  background: url('../assets/images/image_5.png') 50% / cover no-repeat;
+  margin: 4px 8px 3.5px 0;
+  width: 50px;
+  height: 18.5px;
+}
+.pembayaran .qris-pay {
+  margin: 4px 0 3px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.pembayaran .qris {
+  margin: 0 0px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.pembayaran .item {
+  border: 0.5px solid #000000;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.pembayaran .container-6 {
+  position: relative;
+  margin: 0 50px;
+  display: flex;
+  width: 1340px;
+  box-sizing: border-box;
+}
+.pembayaran-2 {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1440px;
+  box-sizing: border-box;
+}
+
