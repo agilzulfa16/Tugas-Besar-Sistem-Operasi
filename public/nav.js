@@ -95,7 +95,7 @@ const navigasi = `
                 <a href="#">
                     <img src="../assets/images/icons/chat.svg" class="pt-1">
                 </a>
-                <a href="checkout.html">
+                <a href="cart.html">
                     <img src="../assets/images/icons/cart.svg">
                 </a>
            
