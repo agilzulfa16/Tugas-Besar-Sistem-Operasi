@@ -7,35 +7,7 @@ const navigasi = `
             </span>
             <span class="capitalize ml-2 text-white hidden">All Categories</span> -->
 
-            <!-- dropdown -->
-            <!-- <div
-                class="absolute w-full left-0 top-full bg-white shadow-xl-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
-                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                    <img src="../assets/images/icons/sofa.svg" alt="sofa" class="w-5 h-5 object-contain">
-                    <span class="ml-6 text-gray-600 text-sm">Sofa</span>
-                </a>
-                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                    <img src="../assets/images/icons/terrace.svg" alt="terrace" class="w-5 h-5 object-contain">
-                    <span class="ml-6 text-gray-600 text-sm">Terarce</span>
-                </a>
-                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                    <img src="../assets/images/icons/bed.svg" alt="bed" class="w-5 h-5 object-contain">
-                    <span class="ml-6 text-gray-600 text-sm">Bed</span>
-                </a>
-                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                    <img src="../assets/images/icons/office.svg" alt="office" class="w-5 h-5 object-contain">
-                    <span class="ml-6 text-gray-600 text-sm">office</span>
-                </a>
-                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                    <img src="../assets/images/icons/outdoor-cafe.svg" alt="outdoor" class="w-5 h-5 object-contain">
-                    <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
-                </a>
-                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                    <img src="../assets/images/icons/bed-2.svg" alt="Mattress" class="w-5 h-5 object-contain">
-                    <span class="ml-6 text-gray-600 text-sm">Mattress</span>
-                </a>
-            </div> -->
-        <!-- </div> -->
+           
 
         <div class="flex items-center justify-between flex-grow md:pl-12 py-5">
             <div class="flex items-center space-x-6 capitalize">
@@ -57,28 +29,50 @@ const navigasi = `
 
 
 
-        <div class="flex items-center space-x-10">
         
-            <a href="#" class="text-center text-gray-700 hover:text-green-600 transition relative">
-                <div class="text-2xl">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </div>
-                <div class="text-lg leading-3">Categories</div>
+        <div class="flex items-center space-x-14 z-20">
+               
+        <div class="px-4 py-4 md:flex items-center cursor-pointer relative group hidden">
+           
+            <div class="text-lg leading-3">Categories</div>
 
-            </a>
-            <a href="#" class="text-center text-gray-700 hover:text-green-600 transition relative">
-                <div class="text-2xl">
-                    <i class="fa-regular fa-user"></i>
-                </div>
-                <div class="text-lg leading-3">Our Packages</div>
-            </a>
-            <a href="#" class="text-center text-gray-700 hover:text-green-600 transition relative">
-                <div class="text-2xl">
-                    <i class="fa-regular fa-user"></i>
-                </div>
-                <div class="text-lg leading-3">Sale</div>
-            </a>
-        </div>
+            <!-- dropdown -->
+            <div
+                class="absolute w-full left-0 top-full bg-white shadow-xl-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                   
+                    <span class="ml-6 text-gray-600 text-sm">Sayuran</span>
+                </a>
+                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                   
+                    <span class="ml-6 text-gray-600 text-sm">Buah</span>
+                </a>
+                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                   
+                    <span class="ml-6 text-gray-600 text-sm">Daging</span>
+                </a>
+                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                   
+                    <span class="ml-6 text-gray-600 text-sm">Bumbu</span>
+                </a>
+               
+            </div>
+        </div> 
+
+
+        <a href="pages/shop.html" class="text-center text-gray-700 hover:text-green-600 transition relative">
+            <div class="text-2xl">
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="text-lg leading-3">Our Packages</div>
+        </a>
+        <a href="#" class="text-center text-gray-700 hover:text-green-600 transition relative">
+            <div class="text-2xl">
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="text-lg leading-3">Sale</div>
+        </a>
+    </div>
         <div class="flex gap-10">
                 <form action="" class="w-full max-w-xs flex justify-end">
                     <span class="absolute left-4 top-3 text-lg text-gray-400">
