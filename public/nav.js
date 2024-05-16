@@ -92,10 +92,10 @@ const navigasi = `
     
                 </form>
                
-                <a href="checkout.html">
+                <a href="#">
                     <img src="../assets/images/icons/chat.svg" class="pt-1">
                 </a>
-                <a href="#">
+                <a href="checkout.html">
                     <img src="../assets/images/icons/cart.svg">
                 </a>
            
