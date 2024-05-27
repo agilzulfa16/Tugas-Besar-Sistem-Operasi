@@ -215,6 +215,12 @@
                             <label for="daging" class="text-gray-600 ml-3 cursor-pointer">Daging</label>
                             <div class="ml-auto text-gray-600 text-sm">(21)</div>
                         </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" name="kategori" id="bumbu" value="Bumbu"
+                                class="text-green-500 focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="bumbu" class="text-gray-600 ml-3 cursor-pointer">Bumbu</label>
+                            <div class="ml-auto text-gray-600 text-sm">(21)</div>
+                        </div>
                     </div>
                 </div>
 
@@ -326,20 +332,43 @@
                                         container.innerHTML += productHTML;
                                     });
                                 }
-                                renderProducts(products);            
+            
+                                renderProducts(products);
+            
                                 function filterProducts() {
-                                    const checkedCategories = Array.from(document.querySelectorAll('input[name="kategori"]:checked')).map(cb => cb.value);
-                                    if (checkedCategories.length === 0) {
-                                        renderProducts(products);
-                                    } else {
-                                        const filteredProducts = products.filter(product => checkedCategories.includes(product.kategori_produk));
-                                        renderProducts(filteredProducts);
+                                    const checkedCategories = Array.from(document.querySelectorAll('input[name="kategori"]:checked')).map(cb => cb.value);            
+                                    console.log("Checked categories:", checkedCategories);
+
+                                    const minPrice = parseFloat(document.getElementById('min').value) || 0;
+                                    const maxPrice = parseFloat(document.getElementById('max').value) || Number.MAX_VALUE;
+
+                                    const filteredProducts = products.filter(product => {
+                                        const matchCategory = checkedCategories.length === 0 || checkedCategories.includes(product.kategori_produk);
+                                        const matchPrice = product.harga_produk >= minPrice && product.harga_produk <= maxPrice;
+                                        return matchCategory && matchPrice;
+                                    });
+
+                                    console.log("Filtered products:", filteredProducts);
+
+                                    renderProducts(filteredProducts);
+                                }
+            
+                                const urlParams = new URLSearchParams(window.location.search);
+                                const categoryParam = urlParams.get('category');
+            
+                                if (categoryParam) {
+                                    const categoryCheckbox = document.querySelector(`input[name="kategori"][value="${categoryParam}"]`);
+                                    if (categoryCheckbox) {
+                                        categoryCheckbox.checked = true;
                                     }
-                                }           
+                                }
                                 const checkboxes = document.querySelectorAll('input[name="kategori"]');
                                 checkboxes.forEach(checkbox => {
                                     checkbox.addEventListener('change', filterProducts);
                                 });
+            
+            
+                                filterProducts();
                             });
                     });
                 </script>
