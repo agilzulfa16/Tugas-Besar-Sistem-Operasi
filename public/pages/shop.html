@@ -261,6 +261,7 @@
 
             <div class="grid md:grid-cols-3 grid-cols-2 gap-6" id="product-container">
 
+                <script src="../helper/monetize.js"></script>
                 <script>
                     document.addEventListener('DOMContentLoaded', () => {
                         fetch('/api/products')
@@ -277,6 +278,8 @@
                                     } else if (product.kategori_produk == "Daging"){
                                         num = 4;
                                     }
+
+                                    var format_harga = monetize(product.harga_produk);
                                     
                                     const productHTML = `
                                         <div class="bg-white shadow rounded overflow-hidden group">
@@ -303,7 +306,7 @@
                                                     </h4>
                                                 </a>
                                                 <div class="flex items-baseline mb-1 space-x-2">
-                                                    <p class="text-xl text-green-500 font-semibold">Rp. ${product.harga_produk}</p>
+                                                    <p class="text-xl text-green-500 font-semibold">Rp. ${format_harga}</p>
                                                 </div>
                                                 <div class="flex items-center">
                                                     <div class="flex gap-1 text-sm text-yellow-400">
