@@ -198,28 +198,24 @@
                     <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Kategori</h3>
                     <div class="space-y-2">
                         <div class="flex items-center">
-                            <input type="checkbox" name="kategori" id="sayur" value="Sayur"
-                                class="text-green-500 focus:ring-0 rounded-sm cursor-pointer">
+                            <input type="checkbox" name="kategori" id="sayur" value="Sayur" class="text-green-500 focus:ring-0 rounded-sm cursor-pointer">
                             <label for="sayur" class="text-gray-600 ml-3 cursor-pointer">Sayur</label>
-                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                            <div class="ml-auto text-gray-600 text-sm" id="sayurCount">(15)</div>
                         </div>
                         <div class="flex items-center">
-                            <input type="checkbox" name="kategori" id="buah" value="Buah"
-                                class="text-green-500 focus:ring-0 rounded-sm cursor-pointer">
+                            <input type="checkbox" name="kategori" id="buah" value="Buah" class="text-green-500 focus:ring-0 rounded-sm cursor-pointer">
                             <label for="buah" class="text-gray-600 ml-3 cursor-pointer">Buah</label>
-                            <div class="ml-auto text-gray-600 text-sm">(9)</div>
+                            <div class="ml-auto text-gray-600 text-sm" id="buahCount">(9)</div>
                         </div>
                         <div class="flex items-center">
-                            <input type="checkbox" name="kategori" id="daging" value="Daging"
-                                class="text-green-500 focus:ring-0 rounded-sm cursor-pointer">
+                            <input type="checkbox" name="kategori" id="daging" value="Daging" class="text-green-500 focus:ring-0 rounded-sm cursor-pointer">
                             <label for="daging" class="text-gray-600 ml-3 cursor-pointer">Daging</label>
-                            <div class="ml-auto text-gray-600 text-sm">(21)</div>
+                            <div class="ml-auto text-gray-600 text-sm" id="dagingCount">(21)</div>
                         </div>
                         <div class="flex items-center">
-                            <input type="checkbox" name="kategori" id="bumbu" value="Bumbu"
-                                class="text-green-500 focus:ring-0 rounded-sm cursor-pointer">
+                            <input type="checkbox" name="kategori" id="bumbu" value="Bumbu" class="text-green-500 focus:ring-0 rounded-sm cursor-pointer">
                             <label for="bumbu" class="text-gray-600 ml-3 cursor-pointer">Bumbu</label>
-                            <div class="ml-auto text-gray-600 text-sm">(21)</div>
+                            <div class="ml-auto text-gray-600 text-sm" id="bumbuCount">(21)</div>
                         </div>
                     </div>
                 </div>
@@ -269,9 +265,26 @@
 
                 <script>
                     document.addEventListener('DOMContentLoaded', () => {
+
+                        const sayurCountElement = document.getElementById('sayurCount');
+                        const buahCountElement = document.getElementById('buahCount');
+                        const dagingCountElement = document.getElementById('dagingCount');
+                        const bumbuCountElement = document.getElementById('bumbuCount');
+
                         fetch('/api/products')
                             .then(response => response.json())
                             .then(products => {
+
+                                const sayurCount = products.filter(product => product.kategori_produk === 'Sayur').length;
+                                const buahCount = products.filter(product => product.kategori_produk === 'Buah').length;
+                                const dagingCount = products.filter(product => product.kategori_produk === 'Daging').length;
+                                const bumbuCount = products.filter(product => product.kategori_produk === 'Bumbu').length;
+
+                                sayurCountElement.textContent = `(${sayurCount})`;
+                                buahCountElement.textContent = `(${buahCount})`;
+                                dagingCountElement.textContent = `(${dagingCount})`;
+                                bumbuCountElement.textContent = `(${bumbuCount})`;
+
                                 const container = document.getElementById('product-container');
                                 
                                 function renderProducts(filteredProducts) {
