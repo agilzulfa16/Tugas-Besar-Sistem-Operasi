@@ -13,8 +13,25 @@ app.get('/api/products', (req, res) => {
     });
 });
 
+app.get('/api/product/:id', (req, res) => {
+    const productId = req.params.id;
+    const query = 'SELECT * FROM produk WHERE id_produk = ?';
+    dbConnection.get(query, [productId], (error, row) => {
+        if (error) {
+            return res.status(500).json({ error: 'Database query error' });
+        }
+
+        if (!row) {
+            return res.status(404).json({ error: 'Product not found' });
+        }
+        res.json(row);
+    });
+});
+
+
+
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/pages/shop.html');
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 app.listen(port, () => {

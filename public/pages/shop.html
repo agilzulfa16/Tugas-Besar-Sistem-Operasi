@@ -200,22 +200,22 @@
                         <div class="flex items-center">
                             <input type="checkbox" name="kategori" id="sayur" value="Sayur" class="text-green-500 focus:ring-0 rounded-sm cursor-pointer">
                             <label for="sayur" class="text-gray-600 ml-3 cursor-pointer">Sayur</label>
-                            <div class="ml-auto text-gray-600 text-sm" id="sayurCount">(15)</div>
+                            <div class="ml-auto text-gray-600 text-sm" id="sayurCount">(77)</div>
                         </div>
                         <div class="flex items-center">
                             <input type="checkbox" name="kategori" id="buah" value="Buah" class="text-green-500 focus:ring-0 rounded-sm cursor-pointer">
                             <label for="buah" class="text-gray-600 ml-3 cursor-pointer">Buah</label>
-                            <div class="ml-auto text-gray-600 text-sm" id="buahCount">(9)</div>
+                            <div class="ml-auto text-gray-600 text-sm" id="buahCount">(77)</div>
                         </div>
                         <div class="flex items-center">
                             <input type="checkbox" name="kategori" id="daging" value="Daging" class="text-green-500 focus:ring-0 rounded-sm cursor-pointer">
                             <label for="daging" class="text-gray-600 ml-3 cursor-pointer">Daging</label>
-                            <div class="ml-auto text-gray-600 text-sm" id="dagingCount">(21)</div>
+                            <div class="ml-auto text-gray-600 text-sm" id="dagingCount">(77)</div>
                         </div>
                         <div class="flex items-center">
                             <input type="checkbox" name="kategori" id="bumbu" value="Bumbu" class="text-green-500 focus:ring-0 rounded-sm cursor-pointer">
                             <label for="bumbu" class="text-gray-600 ml-3 cursor-pointer">Bumbu</label>
-                            <div class="ml-auto text-gray-600 text-sm" id="bumbuCount">(21)</div>
+                            <div class="ml-auto text-gray-600 text-sm" id="bumbuCount">(77)</div>
                         </div>
                     </div>
                 </div>
@@ -297,6 +297,8 @@
                                             num = 5;
                                         } else if (product.kategori_produk == "Daging"){
                                             num = 4;
+                                        } else if (product.kategori_produk == "Bumbu"){
+                                            num = 3;
                                         }
             
                                         var format_harga = monetize(product.harga_produk);
@@ -307,7 +309,7 @@
                                                     <img src="/assets/images/products/product${num}.png" alt="${product.nama_produk}" class="w-72 h-60" id="random-image">
                                                     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                                                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
-                                                        <a href="#"
+                                                        <a href="product.html?id=${product.id_produk}"
                                                             class="text-white text-lg w-9 h-8 rounded-full bg-green-500 flex items-center justify-center hover:bg-gray-800 transition"
                                                             title="view product">
                                                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -352,13 +354,9 @@
                                     const checkedCategories = Array.from(document.querySelectorAll('input[name="kategori"]:checked')).map(cb => cb.value);            
                                     console.log("Checked categories:", checkedCategories);
 
-                                    const minPrice = parseFloat(document.getElementById('min').value) || 0;
-                                    const maxPrice = parseFloat(document.getElementById('max').value) || Number.MAX_VALUE;
-
                                     const filteredProducts = products.filter(product => {
                                         const matchCategory = checkedCategories.length === 0 || checkedCategories.includes(product.kategori_produk);
-                                        const matchPrice = product.harga_produk >= minPrice && product.harga_produk <= maxPrice;
-                                        return matchCategory && matchPrice;
+                                        return matchCategory;
                                     });
 
                                     console.log("Filtered products:", filteredProducts);

@@ -39,19 +39,19 @@ const navigasi = `
             <!-- dropdown -->
             <div
                 class="absolute w-full left-0 top-full bg-white shadow-xl-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
-                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                <a href="shop.html?category=Sayur" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
                    
                     <span class="ml-6 text-gray-600 text-sm">Sayuran</span>
                 </a>
-                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                <a href="shop.html?category=Buah" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
                    
                     <span class="ml-6 text-gray-600 text-sm">Buah</span>
                 </a>
-                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                <a href="shop.html?category=Daging" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
                    
                     <span class="ml-6 text-gray-600 text-sm">Daging</span>
                 </a>
-                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                <a href="shop.html?category=Sayur" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
                    
                     <span class="ml-6 text-gray-600 text-sm">Bumbu</span>
                 </a>
@@ -60,7 +60,7 @@ const navigasi = `
         </div> 
 
 
-        <a href="pages/shop.html" class="text-center text-gray-700 hover:text-green-600 transition relative">
+        <a href="shop.html" class="text-center text-gray-700 hover:text-green-600 transition relative">
             <div class="text-2xl">
                 <i class="fa-regular fa-user"></i>
             </div>
