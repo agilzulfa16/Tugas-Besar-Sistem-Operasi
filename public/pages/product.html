@@ -61,6 +61,21 @@
                         const productDescriptions = document.querySelectorAll('#product-description');
                         productDescriptions.forEach(description => {
                         description.textContent = product.deskripsi_produk;
+
+                        var num = null;
+                        if (product.kategori_produk == "Sayur"){
+                            num = 1;
+                        } else if (product.kategori_produk == "Buah"){
+                            num = 5;
+                        } else if (product.kategori_produk == "Daging"){
+                            num = 4;
+                        } else if (product.kategori_produk == "Bumbu"){
+                            num = 3;
+                        }
+                        
+                        var image = document.getElementById('product-image');
+                        image.src = `../assets/images/products/product${num}.png`;
+
                         });
 
 
@@ -79,7 +94,7 @@
     <!-- product-detail -->
     <div class="container grid grid-cols-2 gap-6">
         <div>
-            <img src="../assets/images/products/product1.png" alt="product" class="w-72 h-60">
+            <img id="product-image" src="../assets/images/products/product1.png" alt="product" class="w-72 h-60">
             <div class="grid grid-cols-5 gap-4 mt-4">
                 <img src="../assets/images/products/product2.png" alt="product2"
                     class="w-full cursor-pointer border border-green-600">
@@ -177,9 +192,15 @@
     </div>
     <!-- ./description -->
 
+
+
+
+    
+
     <!-- related product -->
     <div class="container pb-16">
         <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">Related products</h2>
+
         <div class="grid grid-cols-4 gap-6">
             <div class="bg-white shadow rounded overflow-hidden group">
                 <div class="relative">
