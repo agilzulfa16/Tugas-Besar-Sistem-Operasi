@@ -265,31 +265,29 @@
 
                 <script>
                     document.addEventListener('DOMContentLoaded', () => {
-                
                         const sayurCountElement = document.getElementById('sayurCount');
                         const buahCountElement = document.getElementById('buahCount');
                         const dagingCountElement = document.getElementById('dagingCount');
                         const bumbuCountElement = document.getElementById('bumbuCount');
-                
+
                         const minInput = document.getElementById('minnn');
                         const maxInput = document.getElementById('maxxx');
-                
+
                         fetch('/api/products')
                             .then(response => response.json())
                             .then(products => {
-                
                                 const sayurCount = products.filter(product => product.kategori_produk === 'Sayur').length;
                                 const buahCount = products.filter(product => product.kategori_produk === 'Buah').length;
                                 const dagingCount = products.filter(product => product.kategori_produk === 'Daging').length;
                                 const bumbuCount = products.filter(product => product.kategori_produk === 'Bumbu').length;
-                
+
                                 sayurCountElement.textContent = `(${sayurCount})`;
                                 buahCountElement.textContent = `(${buahCount})`;
                                 dagingCountElement.textContent = `(${dagingCount})`;
                                 bumbuCountElement.textContent = `(${bumbuCount})`;
-                
+
                                 const container = document.getElementById('product-container');
-                
+
                                 function renderProducts(filteredProducts) {
                                     container.innerHTML = '';
                                     filteredProducts.forEach(product => {
@@ -303,9 +301,9 @@
                                         } else if (product.kategori_produk == "Bumbu") {
                                             num = 3;
                                         }
-                
+
                                         var format_harga = monetize(product.harga_produk);
-                
+
                                         const productHTML = `
                                             <div class="bg-white shadow rounded overflow-hidden group">
                                                 <div class="relative">
@@ -346,53 +344,54 @@
                                                 </a> 
                                             </div>
                                         `;
-                
+
                                         container.innerHTML += productHTML;
                                     });
                                 }
-                
-                                renderProducts(products);
-                
+
                                 function filterProducts() {
-                                    const checkedCategories = Array.from(document.querySelectorAll('input[name="kategori"]:checked')).map(cb => cb.value);            
+                                    const checkedCategories = Array.from(document.querySelectorAll('input[name="kategori"]:checked')).map(cb => cb.value);
                                     console.log("Checked categories:", checkedCategories);
-                
+
                                     const minPrice = parseFloat(minInput.value) || 0;
                                     const maxPrice = parseFloat(maxInput.value) || Infinity;
                                     console.log("Min price:", minPrice, "Max price:", maxPrice);
-                
+
                                     const filteredProducts = products.filter(product => {
                                         const matchCategory = checkedCategories.length === 0 || checkedCategories.includes(product.kategori_produk);
                                         const matchPrice = product.harga_produk >= minPrice && product.harga_produk <= maxPrice;
-                                        return matchCategory && matchPrice;
+                                        const matchSearch = searchQuery === '' || product.nama_produk.toLowerCase().includes(searchQuery.toLowerCase());
+                                        return matchCategory && matchPrice && matchSearch;
                                     });
-                
+
                                     console.log("Filtered products:", filteredProducts);
-                
+
                                     renderProducts(filteredProducts);
                                 }
-                
+
                                 const urlParams = new URLSearchParams(window.location.search);
                                 const categoryParam = urlParams.get('category');
-                
+                                const searchQuery = urlParams.get('search') || '';
+
                                 if (categoryParam) {
                                     const categoryCheckbox = document.querySelector(`input[name="kategori"][value="${categoryParam}"]`);
                                     if (categoryCheckbox) {
                                         categoryCheckbox.checked = true;
                                     }
                                 }
-                
+
                                 const checkboxes = document.querySelectorAll('input[name="kategori"]');
                                 checkboxes.forEach(checkbox => {
                                     checkbox.addEventListener('change', filterProducts);
                                 });
-                
+
                                 minInput.addEventListener('input', filterProducts);
                                 maxInput.addEventListener('input', filterProducts);
-                
+
                                 filterProducts();
                             });
                     });
+
                 </script>
                 
                 
