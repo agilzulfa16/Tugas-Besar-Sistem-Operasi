@@ -43,17 +43,17 @@
                     fetch('/session')
                         .then(response => response.json())
                         .then(data => {
-                            console.log(data);
-            
+                            console.log('Response data:', data);
+
                             var loginLink = document.getElementById('loginLinked');
                             var logoutLink = document.getElementById('logoutLinked');
                             var usernameDisplay = document.getElementById('usernameDisplay');
-            
+
                             if (data.loggedIn) {
                                 loginLink.style.display = 'none';
                                 logoutLink.style.display = 'inline-block';
                                 logoutLink.href = '/logout';
-                                usernameDisplay.textContent = `Logged in as ${data.username}`;
+                                usernameDisplay.textContent = `Logged in as ${data.username}`; // Menggunakan 'username'
                             } else {
                                 loginLink.style.display = 'inline-block';
                                 logoutLink.style.display = 'none';
@@ -65,7 +65,9 @@
                             console.error('Error fetching session data:', error);
                         });
                 });
+
             </script>
+
 
         </div>
     </nav>

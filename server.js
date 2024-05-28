@@ -18,7 +18,7 @@ app.use(session({
 
 app.get('/session', (req, res) => {
     if (req.session.user) {
-        res.json({ loggedIn: true, username: req.session.user.nama_user });
+        res.json({ loggedIn: true, nama_user: req.session.user.nama_user });
     } else {
         res.json({ loggedIn: false });
     }
@@ -61,9 +61,7 @@ app.post('/login', (req, res) => {
             return res.status(500).send('Internal server error');
         }
         if (row) {
-            console.log('Row data:', row);
-
-            req.session.user = { username: row.nama_user };
+            req.session.user = { nama_user: row.nama_user };
             console.log('Session user:', req.session.user);
             res.redirect('/index.html');
         } else {
@@ -71,8 +69,6 @@ app.post('/login', (req, res) => {
         }
     });
 });
-
-
 
 app.get('/logout', (req, res) => {
     console.log('Attempting to destroy session');
