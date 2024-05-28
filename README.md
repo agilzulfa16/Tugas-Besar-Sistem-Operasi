@@ -5,7 +5,7 @@ Tahap 1 :
 3. kalo mencet salah satu produk keluar detail produk (product.html) (UI telah tersedia) (Back End Ok)
 4. add to cart (UI telah tersedia) (Back End Perlu Login (Not OK))
 5. Terus lanjut checkout (UI telah tersedia)
-6. Login, register (UI telah tersedia)
+6. Login, register (UI telah tersedia) (Back End Half Way There "Logged in as Undefined Issue")
 
 
 Tahap 2: 
